@@ -1,0 +1,2 @@
+export interface QueryString {
+}
