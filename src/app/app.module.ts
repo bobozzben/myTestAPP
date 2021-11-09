@@ -12,6 +12,8 @@ import { ProductDetailsComponent } from './product-details/product-details.compo
 import { CartComponent } from './cart/cart.component';
 import { ShippingComponent } from './shipping/shipping.component';
 import { ProductQueryComponent } from './product-query/product-query.component';
+import { ReactiveComponent } from './reactive/reactive.component';
+import { ForbiddenNameDirective } from './forbidden-name.directive';
 
 
 @NgModule({
@@ -35,9 +37,9 @@ import { ProductQueryComponent } from './product-query/product-query.component';
     ProductDetailsComponent,
     CartComponent,
     ShippingComponent,
-    ProductQueryComponent
-
-  ],
+    ProductQueryComponent,
+    ReactiveComponent,
+    ],
   bootstrap: [
     AppComponent
   ]

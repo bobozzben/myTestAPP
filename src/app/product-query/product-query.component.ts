@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { Output, EventEmitter } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { Input } from '@angular/core';
+import { QueryString } from '../query-string';
+
 
 @Component({
   selector: 'app-product-query',
@@ -8,7 +11,9 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./product-query.component.css']
 })
 export class ProductQueryComponent implements OnInit {
-  @Output() notify = new EventEmitter()
+  @Output() notify = new EventEmitter();
+  @Input() querystr!: QueryString;
+
   constructor(private http: HttpClient) { }
   onNotify() {
     window.alert('You will be notified when the product goes on sale');
